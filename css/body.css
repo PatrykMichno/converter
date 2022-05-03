@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding: 20px 20px;
+    max-width: 850px;
+    margin: auto;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.5;
+    background-color: #eee;
+    vertical-align: middle;
+    overflow-x: auto
+}
+
+.body__table {
+    background-color: white;
+    text-align: center;
+    font-weight: normal;
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+}
+
+
+.body__tableCell {
+    border: solid #DDD;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    padding: 20px;
+    
+    
+}
+
+.body__fieldset {
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+
+    
+}
+
+.body__fieldsetLabel {
+    margin: auto;
+    width: 500px;
+    display: block;
+}

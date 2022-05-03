@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency-converter by Patryk Michno</title>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/body.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+    <main>
+        <article>
+            <header>
+                <h1>Currency online</h1>
+            </header>
+            <strong>Simple and safe currency exchange</strong><br>
+            online 24/7
+        </article>
+        <br>
+        <table class="body__table">
+            <tr>
+                <th class="body__tableCell" scope="col">Euro exchange rate:</th>
+                <th class="body__tableCell" scope="col">Dollar exchange rate:</th>
+                <th class="body__tableCell" scope="col">Pound exchange rate:</th>
+            </tr>
+            <tr>
+                <td class="body__tableCell">4,63</td>
+                <td class="body__tableCell">4,28</td>
+                <td class="body__tableCell">5,53</td>
+            </tr>
+        </table>
+        <br>
+        <form class="js-form">
+            <fieldset class="body__fieldset">
+                <h2>Please select a currency</h2>
+                <label class="body__fieldsetLabel">
+                    <input type="radio" class="js-euro" name="radio" checked> €
+                    <input type="radio" class="js-dolar" name="radio"> $
+                    <input type="radio" class="js-swiss" name="radio"> £
+                </label>
+                <br>
+                <div>
+                    I have [PLN]:
+                    <br>
+                    <input name=required autofocus class="js-amount" type="number" min="0.01" step="any">
+                </div>
+                <div>
+                    I will get <span class="js-stamp">[EUR]:</span>
+                    <br>
+                    <input class="js-result" readonly type="text">
+
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
